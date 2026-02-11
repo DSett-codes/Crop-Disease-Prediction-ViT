@@ -1,0 +1,9 @@
+numpy 
+pandas
+matplotlib
+seaborn
+huggingface_hub 
+transformers 
+datasets 
+evaluate 
+albumentations

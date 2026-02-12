@@ -30,6 +30,7 @@ input_name = session.get_inputs()[0].name
 processed_img = preprocess_image("image.png")
 # after preprocessing image -> processed_img
 logits = session.run(None, {input_name: processed_img})[0]   # shape [1, num_classes]
+
 pred_id = int(np.argmax(logits))
 
 pred_label = id2label[str(pred_id)]
